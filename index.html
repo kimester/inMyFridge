@@ -12,12 +12,14 @@
     <link rel="stylesheet" href="materialize.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </head>
+
   <body class="light-green lighten-5">
     <header>
       <h2>What Is In Your Fridge</h2>
     </header>
+
     <main>
-      
+      <!--Ingredient Input Section-->
       <h4 class="">Ingredient List</h4>
       <h6>Add ingredients</h6>
 
@@ -27,24 +29,19 @@
           class="form-input w-100"
           id="ingredient-input"
           name="ingredient-input"
-          placeholder="enter item"
-        />
-        <button
-        
-          class="waves-effect waves-circle waves-light btn btn-floating secondary-content"
+          placeholder="enter item"/>
+        <button class="waves-effect waves-circle waves-light btn btn-floating secondary-content"
           type="submit"
-          name="action"
-        >
-          +
-          <i class="waves-effect waves-circle waves-light btn btn-floating secondary-content"></i>
+          name="action">
+          + <i class="waves-effect waves-circle waves-light btn btn-floating secondary-content"></i>
         </button>
       </form>
       
       <ul id="ingredient-list"></ul>
 
-      <!--Video Section-->
+      <!--Video Generating Search Bar-->
       <div class="container">
-        <form class="recipes">
+        <form id="recipes">
           <div class="form-group">
             <input type="text" class="form-control" id="search">
           </div>
@@ -56,6 +53,7 @@
 
       </div>
 
+      <!--Row Where Videos Appear-->
       <div class="row">
         <div class="col-md-12">
           <div id="videos"></div>
@@ -78,6 +76,7 @@
         </div>
       </div>
 
+      <!--Decorative Images-->
       <img class="right"
         src="https://vegsoc.org/wp-content/uploads/2019/03/vegetable-box-750x580.jpg"
         alt="produce"
