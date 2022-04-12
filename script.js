@@ -1,7 +1,10 @@
 //Youtube API Section
 $(document).ready(function(){
 
-    var API_KEY = "AIzaSyCn4UetsSP0U1ys0I-Nse8icG5ybu9dnmc";
+    var YT_API_KEY = "AIzaSyCdW681Kz4w_rDae_Fv7q4LsCNcPZinsLM";
+
+    //Spare Key:
+    //AIzaSyCn4UetsSP0U1ys0I-Nse8icG5ybu9dnmc
 
     var video = '';
 
@@ -11,7 +14,7 @@ $(document).ready(function(){
         alert("form is submitted")
         var search = $("#search").val()
 
-        videoSearch(API_KEY,search,10)
+        videoSearch(YT_API_KEY, search, 4)
     });
 
     function videoSearch(key,search, maxResults) {
@@ -21,8 +24,7 @@ $(document).ready(function(){
 
             data.items.forEach(item =>  {
                 video = `
-
-                <iframe width="420" height="315" src="http://www.youtube.com/embed${item.id.videoId}" frameborder="0" allowfullscreen></iframe>
+                <iframe width="420" height="315" src="http://www.youtube.com/embed/${item.id.videoId}" frameborder="0" allowfullscreen></iframe>
                 
                 `
 
@@ -40,49 +42,48 @@ $(document).ready(function(){
 
 
 //Spoonacular API Section
-var repoList = document.querySelector('ul');
-var fetchButton = document.getElementById('fetch-button');
-var ingredientsList = document.getElementById('ingredients-input')
-console.log(ingredientsList)
-console.log(fetchButton)
+// var repoList = document.querySelector('ul');
+// var fetchButton = document.getElementById('fetch-button');
+// var ingredientsList = document.getElementById('ingredients-input')
+// console.log(ingredientsList)
+// console.log(fetchButton)
 
-fetchButton.addEventListener('click', getIngredientsList);
+// fetchButton.addEventListener('click', getIngredientsList);
 
-function getIngredientsList(event){
-  event.preventDefault();
-  var searchInputText = document.getElementById('ingredients-input').value.trim();
- console.log(searchInputText);
-fetch(`https://api.spoonacular.com/recipes/716429/information?apiKey=414afb9d3ee94e3db1c1540d721fe959&ingredients=${searchInputText}`)
-.then(function (response) {
-  return response.json();
-})
-.then(function (data) {
-  console.log(data)
-});
-}
-getIngredientsList();
+// function getIngredientsList(event){
+//   event.preventDefault();
+//   var searchInputText = document.getElementById('ingredients-input').value.trim();
+//  console.log(searchInputText);
+// fetch(`https://api.spoonacular.com/recipes/716429/information?apiKey=414afb9d3ee94e3db1c1540d721fe959&ingredients=${searchInputText}`)
+// .then(function (response) {
+//   return response.json();
+// })
+// .then(function (data) {
+//   console.log(data)
+// });
+// }
+// getIngredientsList();
 
-function getApi(){
-    var myRequestUrl = 'https://api.spoonacular.com/recipes/716429/information?apiKey=c1d66c1338404c7795af5ea7c1401af3&ingredients=';
-    var myIngredient = ingredientsList;
-    var requestUrl = myRequestUrl + myIngredient;
-     console.log(requestUrl)
+// function getApi(){
+//     var myRequestUrl = 'https://api.spoonacular.com/recipes/716429/information?apiKey=c1d66c1338404c7795af5ea7c1401af3&ingredients=';
+//     var myIngredient = ingredientsList;
+//     var requestUrl = myRequestUrl + myIngredient;
+//      console.log(requestUrl)
     
-  fetch(requestUrl)
-  .then(function (response) {
-    return response.json();
-  })
-  .then(function (data) {
-    for (var i = 0; i < data.length; i++) {
-      var titleItem = document.createElement('title')
-      listTitle.textContent = data [i].title;
-      repoList.appendChild(listTitle)
+//   fetch(requestUrl)
+//   .then(function (response) {
+//     return response.json();
+//   })
+//   .then(function (data) {
+//     for (var i = 0; i < data.length; i++) {
+//       var titleItem = document.createElement('title')
+//       listTitle.textContent = data [i].title;
+//       repoList.appendChild(listTitle)
       
       
-     }
-    console.log(data)
-})
-}
-getApi();
- fetchButton.addEventListener('click', getApi)
-
+//      }
+//     console.log(data)
+// })
+// }
+// getApi();
+//  fetchButton.addEventListener('click', getApi)
