@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="materialize.css" />
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </head>
   <body class="light-green lighten-5">
     <header>
@@ -42,14 +42,15 @@
       
       <ul id="ingredient-list"></ul>
 
+      <!--Video Section-->
       <div class="container">
         <form class="recipes">
           <div class="form-group">
             <input type="text" class="form-control" id="search">
           </div>
+          
           <div class="form-group">
-            <input type="submit" class="btn btn-danger" value="Search">
-
+            <input type="submit" class="btn btn-danger" value="search">
           </div>
         </form>
 
@@ -59,12 +60,7 @@
         <div class="col-md-12">
           <div id="videos"></div>
 
-
-
         </div>
-      
-      
-      
       </div>
 
       <div class="row">
@@ -92,39 +88,39 @@
     />
   </main>
 
-    <script type="text/javascript" src="script.js"></script>
-  </body>
-
-
   
-  <footer class="page-footer brown lighten-3 ">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Info</h5>
-          <li><a class="grey-text text-lighten-3" href="#!">FAQ</a></li>
-          <li><a class="grey-text text-lighten-3" href="#!">Mobile App (coming soon) </a></li>
-          <li><a class="grey-text text-lighten-3" href="#!">About Us</a></li>
-          <li><a class="grey-text text-lighten-3" href="#!">Contact Us</a></li>
-        </div>
-        
-        <div class="col l4 offset-l2 s12">
-          <h5 class="white-text">API Resources</h5>
-          <ul>
-            <li><a class="grey-text text-lighten-3" href="#!">Full Documentation</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!"></a></li>
-            <li><a class="grey-text text-lighten-3" href="#!"></a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-          </ul>
+    <footer class="page-footer brown lighten-3 ">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Info</h5>
+            <li><a class="grey-text text-lighten-3" href="#!">FAQ</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Mobile App (coming soon) </a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">About Us</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Contact Us</a></li>
+          </div>
           
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">API Resources</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="#!">Full Documentation</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!"></a></li>
+              <li><a class="grey-text text-lighten-3" href="#!"></a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+            </ul>
+            
+          </div>
         </div>
       </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container grey-text text-lighten-4">
-      ©  Copyright Text
-      <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+      <div class="footer-copyright">
+        <div class="container grey-text text-lighten-4">
+        ©  Copyright Text
+        <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
+
+    <script type="text/javascript" src="./script.js"></script>
+
+  </body>
 </html>
