@@ -5,19 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="materialize.css" />
-
   </head>
   <body class="light-green lighten-5">
     <header>
-      <h2>What Is In Your Fridge</h2>
+      <h1>What Is In Your Fridge</h1>
     </header>
     <main>
-      
       <h4 class="">Ingredient List</h4>
       <h6>Add ingredients</h6>
 
@@ -25,21 +26,23 @@
         <input
           type="text"
           class="form-input w-100"
-          id="ingredient-input"
+          id="ingredients-input"
           name="ingredient-input"
           placeholder="enter item"
         />
         <button
-        
           class="waves-effect waves-circle waves-light btn btn-floating secondary-content"
+          id="fetch-button"
           type="submit"
           name="action"
         >
           +
-          <i class="waves-effect waves-circle waves-light btn btn-floating secondary-content"></i>
+          <i
+            class="waves-effect waves-circle waves-light btn btn-floating secondary-content"
+          ></i>
         </button>
       </form>
-      
+
       <ul id="ingredient-list"></ul>
 
       <div class="row">
@@ -47,59 +50,70 @@
           <div class="card blue-grey darken-1">
             <div class="card-content white-text">
               <span class="card-title">Recipe </span>
-              <p>I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.</p>
+              <p>
+                I am a very simple card. I am good at containing small bits of
+                information. I am convenient because I require little markup to
+                use effectively.
+              </p>
             </div>
             <div class="card-action white-text">
-              <a href="#">This is a link</a>
+              <a id="link" href="#">This is a link</a>
             </div>
           </div>
         </div>
       </div>
 
-      <img class="right"
+      <img
+        class="right"
         src="https://vegsoc.org/wp-content/uploads/2019/03/vegetable-box-750x580.jpg"
         alt="produce"
       />
-    <img class="right"
-      src="https://i1.wp.com/lucasitaly.com/wp-content/uploads/2018/09/dreamstime_s_93087319_FEATURED.jpg?fit=772%2C515"
-      alt="pasta"
-    />
-  </main>
+      <img
+        class="right"
+        src="https://i1.wp.com/lucasitaly.com/wp-content/uploads/2018/09/dreamstime_s_93087319_FEATURED.jpg?fit=772%2C515"
+        alt="pasta"
+      />
+    </main>
 
-    <script type="text/javascript" src="script.js"></script>
+    <footer class="page-footer brown lighten-3">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Info</h5>
+            <li><a class="grey-text text-lighten-3" href="#!">FAQ</a></li>
+            <li>
+              <a class="grey-text text-lighten-3" href="#!"
+                >Mobile App (coming soon)
+              </a>
+            </li>
+            <li><a class="grey-text text-lighten-3" href="#!">About Us</a></li>
+            <li>
+              <a class="grey-text text-lighten-3" href="#!">Contact Us</a>
+            </li>
+          </div>
+
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">API Resources</h5>
+            <ul>
+              <li>
+                <a class="grey-text text-lighten-3" href="#!"
+                  >Full Documentation</a
+                >
+              </li>
+              <li><a class="grey-text text-lighten-3" href="#!"></a></li>
+              <li><a class="grey-text text-lighten-3" href="#!"></a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container grey-text text-lighten-4">
+          © Copyright Text
+          <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+        </div>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
   </body>
-
-
-  
-  <footer class="page-footer brown lighten-3 ">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Info</h5>
-          <li><a class="grey-text text-lighten-3" href="#!">FAQ</a></li>
-          <li><a class="grey-text text-lighten-3" href="#!">Mobile App (coming soon) </a></li>
-          <li><a class="grey-text text-lighten-3" href="#!">About Us</a></li>
-          <li><a class="grey-text text-lighten-3" href="#!">Contact Us</a></li>
-        </div>
-        
-        <div class="col l4 offset-l2 s12">
-          <h5 class="white-text">API Resources</h5>
-          <ul>
-            <li><a class="grey-text text-lighten-3" href="#!">Full Documentation</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!"></a></li>
-            <li><a class="grey-text text-lighten-3" href="#!"></a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-          </ul>
-          
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container grey-text text-lighten-4">
-      ©  Copyright Text
-      <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-      </div>
-    </div>
-  </footer>
 </html>
