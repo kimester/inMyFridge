@@ -1,18 +1,27 @@
 
 //Spoonacular API Section
+$(document).ready(function(){
 
 var fetchButton = document.getElementById('fetch-button');
-var ingredientsList = document.getElementById('ingredients-input')
 
 fetchButton.addEventListener('click', getiIngredientsList);
 
-function getiIngredientsList(event){
+ function getiIngredientsList(event){
   event.preventDefault();
   var searchInputText = document.getElementById('ingredients-input').value.trim();
- //console.log(searchInputText);
+
+ console.log(searchInputText);
  
- fetch(`https://api.spoonacular.com/recipes/complexSearch?apiKey=0982c029a4d04bb5b43ac973cac0a1bd&query=${searchInputText}`)
-//fetch(`https://api.spoonacular.com/recipes/information?apiKey=0982c029a4d04bb5b43ac973cac0a1bd&ingredients=${searchInputText}`)
+
+ 
+    var Spoon_API_Key = "caf4ab2a47054816a81bf757a283f48a"
+    //Spare Spoon Keys:
+    //0982c029a4d04bb5b43ac973cac0a1bd
+    //a6bc0cdd81484675bded0d13edae9d8
+    //0982c029a4d04bb5b43ac973cac0a1bd
+    //0982c029a4d04bb5b43ac973cac0a1bd
+ 
+ fetch(`https://api.spoonacular.com/recipes/complexSearch?apiKey=` + Spoon_API_Key + `&query=${searchInputText}`)
 .then(function (response) {
   return response.json();
 })
@@ -31,11 +40,14 @@ function getiIngredientsList(event){
 
     $('#link').append(myRecipe);
     $('#link').append(myDish);
+
+    console.log(myRecipe)
 }
 });
 }
+
+
 //Youtube API Section
-$(document).ready(function(){
 
     var YT_API_KEY = "AIzaSyCdW681Kz4w_rDae_Fv7q4LsCNcPZinsLM";
 
@@ -47,8 +59,8 @@ $(document).ready(function(){
 
     $("#recipes").submit(function(event){
         event.preventDefault()
-        alert("form is submitted")
-        var search = $("#search").val()
+        console.log("form is submitted")
+        var search = $(search).val()
 
         videoSearch(YT_API_KEY, search, 4)
     });
@@ -75,6 +87,3 @@ $(document).ready(function(){
 
 
 });
-
-
-
