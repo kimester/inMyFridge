@@ -4,10 +4,16 @@ $(document).ready(function(){
 
 var fetchButton = document.getElementById('fetch-button');
 
-fetchButton.addEventListener('click', getiIngredientsList);
+fetchButton.addEventListener('click', getIngredientsList);
 
- function getiIngredientsList(event){
+
+
+ function getIngredientsList(event){
+
   event.preventDefault();
+
+  $("#link").empty()
+
   var searchInputText = document.getElementById('ingredients-input').value.trim();
 
  console.log(searchInputText);
@@ -59,6 +65,9 @@ fetchButton.addEventListener('click', getiIngredientsList);
 
     $("#recipes").submit(function(event){
         event.preventDefault()
+
+        $("#videos").empty()
+
         console.log("form is submitted")
         var search = $(search).val()
 
