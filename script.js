@@ -1,3 +1,4 @@
+
 $(document).ready(function () {
   //Spoonacular API Section
   var fetchButton = document.getElementById("fetch-button");
