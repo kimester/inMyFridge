@@ -141,6 +141,7 @@ $(document).ready(function () {
             console.log("form is submitted");
 
             var search = $(this).text() + "recipe";
+            var maxResults = 4;
 
                 //Note^ added `+ "recipe"` here--can remove if broken
 
