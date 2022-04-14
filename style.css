@@ -44,19 +44,29 @@ header {
   border: black;
   background: blue; */
 
-  
+  .row1{
+    float: right;
+    border: black;
+    background: blue;
+    float: right;
+    display: block;
+    border: black;
+    background: blue;
+    height: 500px;
+    width: 45%;
+    flex-wrap: wrap;
+  }
+  .row2{
+    float: left;
+    float: right;
+    display: block;
+    border: black;
+    background: blue;
+    height: 500px;
+    width: 45%;
+    flex-wrap: wrap;
+  }
 
-.row1{
-  float: right;
-  
-  border: black;
-  background: blue;
-  
-}
-.row2{
-  float: left;
-  
-}
 ul {
   margin: 2.5rem auto;
   font-size: 1.5rem;

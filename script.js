@@ -1,7 +1,7 @@
 var ingredientList = []
 $(document).ready(function () {
 
-    //populating ingredients
+    //Populating Ingredients Section
 
     var ingredientFormEl = $('#ingredient-form');
     var ingredientListEl = $('#ingredient-list');
@@ -40,7 +40,8 @@ $(document).ready(function () {
 
     function handleRemoveItem(event) {
     delBtnClicked = $(event.target);
-    //add code removing parent from the array
+
+    //ideally add code removing parent from the array
 
     delBtnClicked.parent('li').remove();
     }
@@ -133,7 +134,7 @@ $(document).ready(function () {
 
             var ytSearchText = $(this).text();
 
-            var maxResults = 3;
+            var maxResults = 4;
 
             videoSearch(YT_API_KEY, ytSearchText, maxResults);
         })
