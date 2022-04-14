@@ -1,7 +1,7 @@
 var ingredientList = []
 $(document).ready(function () {
 
-    //populating ingredients
+//Attempt at populating ingredients
 
     var ingredientFormEl = $('#ingredient-form');
     var ingredientListEl = $('#ingredient-list');
@@ -18,7 +18,7 @@ $(document).ready(function () {
         }
 
         var ingredientListItemEl = $(
-        '<li class="flex-row justify-space-between align-center p-2 bg-light text-dark"' + 'id="' +  + '">'
+        '<li class="flex-row justify-space-between align-center p-2 bg-light text-dark">'
         );
     
         ingredientListItemEl.text(ingredientItem);
@@ -34,17 +34,26 @@ $(document).ready(function () {
         //add the item to array "ingredientList"
         ingredientList.push(ingredientItem)
 
+        
+        // for (var i = 0; i < val2; i++) {
+        //     ingredientList[i] = document.getElementById(i + ingredientItem).value;
+        // } 
+
         // clear the form input element
-        $('input[name="ingredient-input"]').val('');
+        $('input[name="ingredients-input"]').val('');
     }
 
     function handleRemoveItem(event) {
     delBtnClicked = $(event.target);
-    //add code removing parent from the array
-
+    // get the parent `<li>` element from the button we pressed and remove it
     delBtnClicked.parent('li').remove();
+    
     }
 
+
+
+
+    // use event delegation on the `ingredientListEl` to listen for click on any element with a class of `delete-item-btn`
     ingredientListEl.on('click', '.delete-item-btn', handleRemoveItem);
     ingredientFormEl.on('submit', handleFormSubmit);
 
@@ -111,7 +120,7 @@ $(document).ready(function () {
         var video = "";
 
         function videoSearch(key, search, maxResults) {
-            $.get("https://www.googleapis.com/youtube/v3/search?key=" + key + "&type=video&part=snippet&maxResults=" + maxResults + "&q=" + search,
+            $.get("https://www.googleapis.com/youtube/v3/search?key=" + key + "&type=video&part=snippet&maxResults" + maxResults + "&q=" + search,
 
             function (data) {console.log(data);
                 data.items.forEach((item) => {
@@ -131,11 +140,11 @@ $(document).ready(function () {
 
             console.log("form is submitted");
 
-            var ytSearchText = $(this).text();
+            var search = $(this).text() + "recipe";
 
-            var maxResults = 3;
+                //Note^ added `+ "recipe"` here--can remove if broken
 
-            videoSearch(YT_API_KEY, ytSearchText, maxResults);
+            videoSearch(YT_API_KEY, search, 5);
         })
     }
 });
