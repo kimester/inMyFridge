@@ -40,20 +40,16 @@ $(document).ready(function () {
         // } 
 
         // clear the form input element
-        $('input[name="ingredients-input"]').val('');
+        $('input[name="ingredient-input"]').val('');
     }
 
     function handleRemoveItem(event) {
     delBtnClicked = $(event.target);
-    // get the parent `<li>` element from the button we pressed and remove it
+    // !!!!! add code removing parent from the array
+
     delBtnClicked.parent('li').remove();
-    
     }
 
-
-
-
-    // use event delegation on the `ingredientListEl` to listen for click on any element with a class of `delete-item-btn`
     ingredientListEl.on('click', '.delete-item-btn', handleRemoveItem);
     ingredientFormEl.on('submit', handleFormSubmit);
 
@@ -140,11 +136,9 @@ $(document).ready(function () {
 
             console.log("form is submitted");
 
-            var search = $(this).text() + "recipe";
+            var search = $(this).text();
 
-                //Note^ added `+ "recipe"` here--can remove if broken
-
-            videoSearch(YT_API_KEY, search, 5);
+            videoSearch(YT_API_KEY, search + "recipe", 2);
         })
     }
 });
