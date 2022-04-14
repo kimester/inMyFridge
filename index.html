@@ -11,9 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap"
       rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="materialize.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
   </head>
 
   <body class="light-green lighten-5">
@@ -24,37 +25,38 @@
     <main>
       <!--Ingredient Input Section-->
       <h4 class="">Ingredient List</h4>
-      <h6>Add ingredients</h6>
 
       <form id="ingredient-form">
         <input
-          type="text"
-          class="form-input w-100"
-          id="ingredients-input"
-          name="ingredient-input"
-          placeholder="enter item"
-        />
-        <button class="btn waves-effect waves-light" type="submit" id="fetch-button"
-        name="action">Submit
-          <i class="material-icons right"></i>
 
+        class="form-input w-100"
+        type="text"
+        name="ingredient-input"
+        id="ingredient-input"
+        placeholder="enter an ingredient"
+        >
+
+        <button
+        class="btn waves-effect waves-light"
+        type="submit"
+        name="action"
+        id="add-button"
+        >Add Ingredient</button>
+
+        <button 
+        class="btn waves-effect waves-light"
+        type="submit"
+        name="action"
+        id="fetch-button">
+        Submit
+          <i class="material-icons right">send</i>
         </button>
 
-        <!-- <button
-          class="waves-effect waves-circle waves-light btn btn-floating secondary-content"
-          id="fetch-button"
-          type="submit"
-          name="action"
-        >
-          +
-          <i
-            class="waves-effect waves-circle waves-light btn btn-floating secondary-content"
-          ></i>
-        </button> -->
+        <ul id="ingredient-list"></ul>
 
       </form>
 
-      <ul id="ingredient-list"></ul>
+      
 
       <!--Video Generating Search Bar-->
 
@@ -77,7 +79,7 @@
               </p>-->
             </div>
             <div class="card-action white-text">
-              <div id="link">This is a link</div>
+              <div id="recipe-list">Recipes will appear here!</div>
             </div>
           </div>
         </div>
@@ -126,8 +128,8 @@
             <ul>
               <li>
                 <a class="grey-text text-lighten-3" href="#!"
-                  >Full Documentation</a
-                >
+                  >Full Documentation
+                </a>
               </li>
               <li><a class="grey-text text-lighten-3" href="#!"></a></li>
               <li><a class="grey-text text-lighten-3" href="#!"></a></li>
@@ -143,6 +145,8 @@
         </div>
       </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script type="text/javascript" src="./script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   </body>
 </html>
