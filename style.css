@@ -1,7 +1,7 @@
-* {
+/* * {
   font-family: "Open Sans", sans-serif;
   color: #bcaaa4;
-}
+} */
 
 body {
   display: flex;
@@ -14,8 +14,8 @@ main {
 }
 
 img {
-  max-width: 400px;
-  max-height: 400px;
+  max-width: 300px;
+  max-height: 300px;
 }
 
 header {
