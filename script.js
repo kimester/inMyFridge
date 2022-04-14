@@ -89,7 +89,7 @@ $(document).ready(function () {
 
             console.log(data);
 
-            for (var i = 0; i < 5; i++) {
+            for (var i = 0; i < 3; i++) {
                 var myRecipe = document.createElement("h3");
 
                 var myDish = document.createElement("img");
@@ -136,9 +136,9 @@ $(document).ready(function () {
 
             console.log("form is submitted");
 
-            var search = $(this).text();
+            var ytSearchText = $(this).text();
 
-            videoSearch(YT_API_KEY, search + "recipe", 2);
+            videoSearch(YT_API_KEY, ytSearchText, maxResults);
         })
     }
 });
