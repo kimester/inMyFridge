@@ -11,55 +11,63 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="materialize.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./style.css"/>
   </head>
 
   <body style="background-image:url( https://kanishkarestaurant.co.uk/wp-content/uploads/2021/05/200520_KaniskaTakeaway_Overheads_08-1920x1280.jpg;)"
   class="light-green lighten-5">
     <header>
-      <h1>What Is In Your Fridge</h1>
+      <h1> What's in your Fridge?</h1>
     </header>
 
     <main>
       <!--Ingredient Input Section-->
       <h4 class="">Ingredient List</h4>
-      <h6>Add ingredients</h6>
 
       <form id="ingredient-form">
         <input
-          type="text"
-          class="form-input w-100"
-          id="ingredients-input"
-          name="ingredient-input"
-          placeholder="enter item"
-        />
-        <button
-          class="waves-effect waves-circle waves-light btn btn-floating secondary-content"
-          id="fetch-button"
-          type="submit"
-          name="action"
+
+        class="form-input w-100"
+        type="text"
+        name="ingredient-input"
+        id="ingredient-input"
+        placeholder="enter an ingredient"
         >
-          +
-          <i
-            class="waves-effect waves-circle waves-light btn btn-floating secondary-content"
-          ></i>
+
+        <button
+        class="btn waves-effect waves-light"
+        type="submit"
+        name="action"
+        id="add-button"
+        >Add Ingredient</button>
+
+        <button 
+        class="btn waves-effect waves-light"
+        type="submit"
+        name="action"
+        id="fetch-button">
+        Submit
+          <i class="material-icons right">send</i>
         </button>
+
+        <ul id="ingredient-list" class="collection"></ul>
+
       </form>
 
-      <ul id="ingredient-list"></ul>
+      
 
       <!--Video Generating Search Bar-->
 
       <!--Row Where Videos Appear-->
-      <div class="row">
+      <div class="row1">
         <div class="col-md-12">
-          <div id="videos"></div>
+          <div id="videos">YouTube</div>
         </div>
       </div>
 
-      <div class="row">
+      <div class="row2">
         <div class="col s12 m6">
           <div class="card blue-grey darken-1">
             <div class="card-content white-text">
@@ -71,14 +79,14 @@
               </p>-->
             </div>
             <div class="card-action white-text">
-              <div id="link">This is a link</div>
+              <div id="recipe-list"></div>
             </div>
           </div>
         </div>
       </div>
-
-      <img
-        class="right"
+      <div id="img">
+      <!-- <img
+        class="left"
         src="https://vegsoc.org/wp-content/uploads/2019/03/vegetable-box-750x580.jpg"
         alt="produce"
       />
@@ -86,11 +94,12 @@
         class="right"
         src="https://i1.wp.com/lucasitaly.com/wp-content/uploads/2018/09/dreamstime_s_93087319_FEATURED.jpg?fit=772%2C515"
         alt="pasta"
-      />
+      /> -->
+    </div>
     </main>
 
     <footer class="page-footer brown lighten-3">
-      <div class="container">
+      <!-- <div class="container">
         <div class="row">
           <div class="col l6 s12">
             <h5 class="white-text">Info</h5>
@@ -104,30 +113,41 @@
             <li>
               <a class="grey-text text-lighten-3" href="#!">Contact Us</a>
             </li>
-          </div>
-
+          </div> -->
+          <!-- <img
+          class="right"
+          src="https://vegsoc.org/wp-content/uploads/2019/03/vegetable-box-750x580.jpg"
+          alt="produce"
+        />
+        <img
+          class="right"
+          src="https://i1.wp.com/lucasitaly.com/wp-content/uploads/2018/09/dreamstime_s_93087319_FEATURED.jpg?fit=772%2C515"
+          alt="pasta"
+        /> -->
           <div class="col l4 offset-l2 s12">
             <h5 class="white-text">API Resources</h5>
             <ul>
               <li>
                 <a class="grey-text text-lighten-3" href="#!"
-                  >Full Documentation</a
-                >
+                  >Full Documentation
+                </a>
               </li>
               <li><a class="grey-text text-lighten-3" href="#!"></a></li>
               <li><a class="grey-text text-lighten-3" href="#!"></a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+              <!-- <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li> -->
             </ul>
           </div>
         </div>
       </div>
-      <div class="footer-copyright">
+      <!-- <div class="footer-copyright">
         <div class="container grey-text text-lighten-4">
           © Copyright Text
           <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
         </div>
-      </div>
+      </div> -->
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script type="text/javascript" src="./script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   </body>
 </html>
