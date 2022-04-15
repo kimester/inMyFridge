@@ -110,7 +110,7 @@ background: radial-gradient(ellipse at center, #D8D582 0%, #69A482 50%, #2E492E 
   text-align: justify;
    content: attr(data-content); 
   overflow: scroll;
-  background-image: url(https://i.ytimg.com/vi/VNXsOz0tjaY/maxresdefault.jpg);
+  
   -webkit-border-radius: 40px 40px 40px 40px;
 -moz-border-radius: 40px 40px 40px 40px;
 border-radius: 40px 40px 40px 40px;
