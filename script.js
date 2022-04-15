@@ -112,7 +112,7 @@ $(document).ready(function () {
 
 
         //Youtube API Section
-        var YT_API_KEY = "AIzaSyCn4UetsSP0U1ys0I-Nse8icG5ybu9dnmc";
+        var YT_API_KEY = "AIzaSyCdW681Kz4w_rDae_Fv7q4LsCNcPZinsLM";
 
         //Spare YT Key:
         //AIzaSyCdW681Kz4w_rDae_Fv7q4LsCNcPZinsLM

@@ -9,19 +9,21 @@ h4{
 }
 
 body {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
+  display: flex; 
+  /* min-height: 100vh; */
+  flex-direction: column; 
 }
 
 main {
   flex: 1 0 auto;
 }
 
-img {
+#img {
+display: contents;
+  max-width: 100px;
+  max-height: 100px;
 
-  max-width: 200px;
-  max-height: 200px;
+  
 
 }
 
@@ -49,11 +51,11 @@ header {
 .row1{
   float: right;
   border: black;
-  background: blue;
+  background-color: #caedf4;
   float: right;
   display: block;
   border: black;
-  background: blue;
+  
   height: 500px;
   width: 45%;
   flex-wrap: wrap;
@@ -64,17 +66,15 @@ header {
 }
 .row2{
   float: left;
-  float: right;
   display: block;
   border: black;
-  background: blue;
   height: 500px;
-  width: 45%;
+  width: 50%;
   flex-wrap: wrap;
   text-align: justify;
   content: attr(data-content);
   overflow: scroll;
-  
+  background-color: #caedf4;
 }
 ul {
   margin: 2.5rem auto;
