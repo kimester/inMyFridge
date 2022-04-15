@@ -1,7 +1,8 @@
 var ingredientList = []
+
 $(document).ready(function () {
 
-//Attempt at populating ingredients
+    //Populating ingredients
 
     var ingredientFormEl = $('#ingredient-form');
     var ingredientListEl = $('#ingredient-list');
@@ -18,7 +19,7 @@ $(document).ready(function () {
         }
 
         var ingredientListItemEl = $(
-        '<li class="flex-row justify-space-between align-center p-2 bg-light text-dark">'
+        '<li class="flex-row justify-space-between align-center p-2 bg-light text-dark collection-item">'
         );
     
         ingredientListItemEl.text(ingredientItem);
@@ -34,20 +35,14 @@ $(document).ready(function () {
         //add the item to array "ingredientList"
         ingredientList.push(ingredientItem)
 
-        
-        // for (var i = 0; i < val2; i++) {
-        //     ingredientList[i] = document.getElementById(i + ingredientItem).value;
-        // } 
-
         // clear the form input element
-        $('input[name="ingredients-input"]').val('');
+        $('input[name="ingredient-input"]').val('');
     }
 
     function handleRemoveItem(event) {
     delBtnClicked = $(event.target);
-    // get the parent `<li>` element from the button we pressed and remove it
+    //delete "li" item
     delBtnClicked.parent('li').remove();
-    
     }
 
 
