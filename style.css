@@ -1,10 +1,10 @@
 
 * {
   margin: 10px;
-  font-family: "Open Sans", sans-serif;
- 
+  font-family: "Open Sans", sans-serif; 
 }
-h4{
+
+h4 {
   justify-content: center;
 }
 
@@ -18,12 +18,14 @@ main {
   flex: 1 0 auto;
 }
 
+
 #img {
 display: contents;
   max-width: 100px;
   max-height: 100px;
 
   
+
 
 }
 
@@ -41,10 +43,12 @@ header {
   border-radius: 10px;
   color: rgb(55, 53, 53);
 }
+
 /* #video{
   display: block;
   border: black;
   background: blue; */
+
 
   
 
@@ -52,9 +56,7 @@ header {
   float: right;
   border: black;
   background-color: #caedf4;
-  float: right;
-  display: block;
-  border: black;
+
   
   height: 500px;
   width: 45%;
@@ -62,9 +64,9 @@ header {
   text-align: justify;
   content: attr(data-content);
   overflow: scroll;
-  
 }
-.row2{
+
+.row2 {
   float: left;
   display: block;
   border: black;
@@ -74,8 +76,11 @@ header {
   text-align: justify;
   content: attr(data-content);
   overflow: scroll;
+
   background-color: #caedf4;
+
 }
+
 ul {
   margin: 2.5rem auto;
   font-size: 1.5rem;
