@@ -48,13 +48,32 @@ header {
 
 .row1{
   float: right;
-  
   border: black;
   background: blue;
+  float: right;
+  display: block;
+  border: black;
+  background: blue;
+  height: 500px;
+  width: 45%;
+  flex-wrap: wrap;
+  text-align: justify;
+  content: attr(data-content);
+  overflow: scroll;
   
 }
 .row2{
   float: left;
+  float: right;
+  display: block;
+  border: black;
+  background: blue;
+  height: 500px;
+  width: 45%;
+  flex-wrap: wrap;
+  text-align: justify;
+  content: attr(data-content);
+  overflow: scroll;
   
 }
 ul {
