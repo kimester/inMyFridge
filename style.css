@@ -1,0 +1,181 @@
+
+* {
+  margin: 10px;
+  font-family: "Open Sans", sans-serif; 
+
+}
+.card-title{
+  font-family: Georgia, serif;
+font-size: 19px;
+letter-spacing: 2px;
+word-spacing: 2px;
+color: #000000;
+font-weight: 700;
+text-decoration: underline solid rgb(68, 68, 68);
+font-style: italic;
+font-variant: normal;
+text-transform: none;
+text-shadow: 2px 0 0px #800040, 3px 2px 0px rgba(77,0,38,0.5), 3px 0 3px #FF002B, 5px 0 3px #800015, 6px 2px 3px rgba(77,0,13,0.5), 6px 0 9px #FF5500, 8px 0 9px #802A00, 9px 2px 9px rgba(77,25,0,0.5), 9px 0 18px #FFD500, 11px 0 18px #806A00, 12px 2px 18px rgba(77,66,0,0.5), 12px 0 30px #D4FF00, 14px 0 30px #6A8000, 15px 2px 30px rgba(64,77,0,0.5), 15px 0 45px #80FF00, 17px 0 45px #408000, 17px 2px 45px rgba(38,77,0,0.5), 2px 2px 2px rgba(129,159,88,0);
+}
+#save{
+  background-color: #7BA487;
+  color: #FFFFFF;
+background: #996D6D;
+font-family: Georgia, serif;
+font-size: 25px;
+letter-spacing: 2px;
+word-spacing: 2px;
+color: #000000;
+font-weight: 400;
+text-decoration: underline solid rgb(68, 68, 68);
+font-style: italic;
+font-variant: normal;
+text-transform: none;
+
+
+
+
+}
+h1
+{
+  color: #FFFFFF;
+/* background: rgb(223, 40, 162); */
+text-shadow: 0 0 10px #FFFFFF;}
+.middle{
+  /* border: dotted; */
+  text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0,0,0,0.15), 2px 2px 2px rgba(206,89,55,0);
+}
+
+#ingredient-input{
+  background-color: #FFFFFF;
+}
+
+
+h4 {
+  justify-content: center;
+}
+
+body {
+  display: flex; 
+  /* min-height: 100vh; */
+  flex-direction: column; 
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+
+h3{
+  text-align: center;
+
+}
+
+header {
+  margin-top: 0;
+  background: #D8D582;
+background: -moz-radial-gradient(center, #D8D582 0%, #69A482 50%, #2E492E 100%);
+background: -webkit-radial-gradient(center, #D8D582 0%, #69A482 50%, #2E492E 100%);
+background: radial-gradient(ellipse at center, #D8D582 0%, #69A482 50%, #2E492E 100%);
+  text-align: center;
+  /* height: 15vh; */
+  /* justify-content: space-between; */
+  padding: 0 100px;
+  margin-bottom: 0;
+  border-bottom: 5px solid #bcaaa4;
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  color: rgb(55, 53, 53);
+  font-size: 2.92rem;
+  /* background: #A39CCE; */
+
+}
+
+/* #video{
+  display: block;
+  border: black;
+  background: blue;  */
+
+
+  
+
+.row1{
+  float: right;
+  border: black;
+  /* background-color: #caedf4; */
+  height: 500px;
+  width: 45%;
+  flex-wrap: wrap;
+  text-align: justify;
+   content: attr(data-content); 
+  overflow: scroll;
+  
+  -webkit-border-radius: 40px 40px 40px 40px;
+-moz-border-radius: 40px 40px 40px 40px;
+border-radius: 40px 40px 40px 40px;
+}
+
+.row2 {
+  float: left;
+  /* display: block; */
+  border: black;
+  height: 500px;
+  width: 45%;
+  flex-wrap: wrap;
+  text-align: justify;
+  content: attr(data-content);
+  overflow: scroll;
+  -webkit-border-radius: 40px 40px 40px 40px;
+-moz-border-radius: 40px 40px 40px 40px;
+border-radius: 40px 40px 40px 40px;
+  
+
+  /* background-color: #caedf4; */
+
+}
+#videos{
+  color: aqua;
+  font-family: Georgia, serif;
+font-size: 19px;
+letter-spacing: 2px;
+word-spacing: 2px;
+color: #000000;
+font-weight: 700;
+text-decoration: underline solid rgb(68, 68, 68);
+font-style: italic;
+font-variant: normal;
+text-transform: none;
+text-shadow: 2px 0 0px #800040, 3px 2px 0px rgba(77,0,38,0.5), 3px 0 3px #FF002B, 5px 0 3px #800015, 6px 2px 3px rgba(77,0,13,0.5), 6px 0 9px #FF5500, 8px 0 9px #802A00, 9px 2px 9px rgba(77,25,0,0.5), 9px 0 18px #FFD500, 11px 0 18px #806A00, 12px 2px 18px rgba(77,66,0,0.5), 12px 0 30px #D4FF00, 14px 0 30px #6A8000, 15px 2px 30px rgba(64,77,0,0.5), 15px 0 45px #80FF00, 17px 0 45px #408000, 17px 2px 45px rgba(38,77,0,0.5), 2px 2px 2px rgba(129,159,88,0);
+}
+
+ul {
+  margin: 2.5rem auto;
+  font-size: 1.5rem;
+  padding: 0;
+  list-style-type: none;
+}
+
+ul li {
+  margin: 1.2rem 0;
+}
+
+footer {
+  /* color: #bcaaa4;
+  border-top: 5px solid #efebe9;
+    background-color: #292c2f;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: normal 16px sans-serif; */
+    color: #616161;
+background: #292c2f;
+text-shadow: #e0e0e0 1px 1px 0;
+  } 
+  
+  
+  
+  
+  
+
