@@ -110,6 +110,7 @@ background: radial-gradient(ellipse at center, #D8D582 0%, #69A482 50%, #2E492E 
   text-align: justify;
    content: attr(data-content); 
   overflow: scroll;
+    background-color: #a19a8d;
   
   -webkit-border-radius: 40px 40px 40px 40px;
 -moz-border-radius: 40px 40px 40px 40px;
@@ -129,7 +130,7 @@ border-radius: 40px 40px 40px 40px;
   -webkit-border-radius: 40px 40px 40px 40px;
 -moz-border-radius: 40px 40px 40px 40px;
 border-radius: 40px 40px 40px 40px;
-  
+    background-color: #a19a8d;
 
   /* background-color: #caedf4; */
 
